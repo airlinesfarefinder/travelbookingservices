@@ -1,0 +1,383 @@
+ <style>
+        section.banners {
+            display: none;
+        }
+
+        .banners {
+            background-color: #fff;
+            padding: 15px 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bannerInner {
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 100%;
+            padding: 0 0px 0 0px;
+            text-align: center;
+        }
+
+        .ringing_phone {
+            animation-name: trin;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .ringing_phone {
+            border: solid 5px #e6effe;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            background: url(images/cal2.gif) center center no-repeat;
+            text-align: center;
+            display: inline-block;
+            background-size: 28px;
+        }
+
+        .clickFull {
+            position: relative;
+        }
+
+        .clickFull a.ddka {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .airLineimg {
+            margin: 0px 0 5px 0;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .airLineimg img {
+            width: 100%;
+            margin: 0px 0px;
+        }
+
+        .bannerInner h1 {
+            color: #191e3b;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 15px 0 15px 0;
+            font-family: 'Fira Sans', sans-serif;
+
+        }
+
+        .airlineLlogos {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .airlineLlogos img {
+            width: 100%;
+            margin: 0px 0px;
+        }
+
+        .banners .bannerInner ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #1a3e6e;
+            padding-bottom: 4px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .banners .bannerInner ul {
+            border-bottom: 2px solid #e01933;
+            padding: 0px;
+            list-style: none;
+        }
+
+        .banners .bannerInner ul li {
+            color: #000;
+            font-size: 14px;
+            background-image: url(../cm-reservation/images/checkIcons.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 18px;
+            font-weight: 500;
+            margin: 0;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        .bannerInner h2 {
+            margin: 0;
+            padding: 0;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .bannerInner .numbers {
+            background: #00308D;
+            border: 0;
+            margin-top: 20px;
+            padding: 3px;
+            background-color: #00308D;
+            position: relative;
+        }
+
+        .bannerInner .clickFull .numbers {
+            border-radius: 50px;
+        }
+
+        .bannerInner .numbers a {
+            color: #191e3b;
+            font-size: 27px;
+            font-weight: 600;
+            padding: 8px 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:10px;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+.numbers{
+    width:90%;
+    margin-inline:auto;
+   margin-block: 1rem;
+   margin-top:20px;
+    margin-bottom:20px;
+}
+
+.mobile-text{
+
+    padding-inline:10px;
+}
+
+        span.nbrs {
+            text-align: left;
+            color: #faf8fd;
+            font-size: 25px;
+        }
+
+        .bannerInner .numbers a span.nbrs small {
+            font-size: 15px;
+            display: block;
+            text-align: left;
+            font-weight: 500;
+            position: relative;
+            top: 3px;
+            color: #f4f7f6;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        .bannerInner hr {
+            border-color: rgb(46 46 46 / 30%);
+            margin: 20px 0 5px 0;
+        }
+
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+
+        .airLineimg h1 {
+            color: #fdfdfd;
+            font-size: 19px;
+            font-weight: 500;
+            margin: 0px 0px;
+            font-family: 'Fira Sans', sans-serif;
+            background: #00308D;
+            padding: 11px 0px;
+        }
+
+        .girlCalling {
+            margin-top: 10px;
+            margin-bottom: 11px;
+            position: relative;
+        }
+
+        .girlCalling img {
+            border-radius: 50%;
+            border: solid 4px #0f4ab5;
+        }
+
+        .bannerInner h2 a {
+            color: #e01933;
+            font-size: 20px;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        .bannerInner h2 p {
+            margin: 10px 0px !important;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'Fira Sans', sans-serif;
+            color: #000;
+        }
+
+        .blink {
+            animation: blinker 1.3s linear infinite;
+        }
+
+        .bannerInner h1 span a {
+            line-height: 29px;
+            color: #191e3b;
+            font-size: 17px;
+        }
+
+        .bannerInner h1 span {
+            color: #191e3b;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 20px 0;
+            font-family: 'Fira Sans', sans-serif;
+            background: #f58c14;
+            padding: 8px 12px;
+            border-radius: 15px;
+        }
+
+        .dss-call2 {
+            margin: 15px 20px;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        .dss-call2 a {
+            color: #000;
+        }
+
+        ul.list-view-items1 {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            justify-content: space-between;
+            border-bottom: 0px solid #e01933 !important;
+            margin-bottom: 3px !important;
+            margin-top: 2px !important;
+        }
+
+        ul.list-view-items1 li {
+            color: #fff !important;
+            width: 49%;
+            text-align: center;
+            font-size: 16px !important;
+            line-height: 26px;
+            font-weight: 400 !important;
+            background: #0f4ab5 !important;
+            margin-bottom: 18px !important;
+            padding: 5px 0px;
+            border-radius: 4px;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        p.mt-3.tt_btm {
+            color: #000;
+            font-size: 16px;
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: 600;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes trin {
+            from {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+
+            20%,
+            32%,
+            44%,
+            56%,
+            68% {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+
+            23%,
+            35%,
+            47%,
+            59%,
+            71% {
+                transform: rotate3d(0, 0, 1, 15deg);
+            }
+
+            26%,
+            38%,
+            50%,
+            62%,
+            74% {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+
+            29%,
+            41%,
+            53%,
+            65%,
+            77% {
+                transform: rotate3d(0, 0, 1, -15deg);
+            }
+
+            80% {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+        }
+
+        @media (min-width:320px) and (max-width:767px) {
+            section.banners {
+                display: block;
+                margin-top: 0px;
+                padding: 0px;
+            }
+
+        }
+    </style>
+
+    <section class="banners">
+        <div class="bannerInner">
+            <div class="clickFull">
+                <a href="tel:(844) 915-7447" class="ddka"></a>
+                <div class="airLineimg">
+                    <h1 class="blink1">Car Hire Reservations</h1>
+                    <img src="images/support-banner.png">
+                </div>
+                <!--<a href="tel:(844) 915-7447">
+    <ul class="list-view-items1">
+                  <li> New Bookings</li>
+                  <li> Changes </li>
+                  <li> Cancellations</li>
+                  <li> Customer Service </li>
+                  <li> Refunds </li>
+                  <li> Upgrades </li>
+    </ul></a>-->
+                <h1>
+                    <span><a href="tel:(844) 915-7447">New Reservations | Modifications
+                    </a></span>
+                    <span><a href="tel:(844) 915-7447">Cancellations
+                    </a></span>
+                </h1>
+          
+                <h2>
+                    <p><b>No Hold - Calls Answered Within Seconds</b></p>
+                    <b><a href="tel:(844) 915-7447" id="ClickToCallEvent" class="blink">Speak With Our Car Hire Expert</a></b>
+                </h2>
+                <div class="numbers">
+                    <a href="tel:(844) 915-7447">
+                        <span class="ringing_phone"></span>
+                        <span class="nbrs"><small>Exclusive Offers</small> (844) 915-7447</span>
+                    </a>
+
+                </div>
+                <p class="mt-3 tt_btm  mobile-text">Call our car rental specialists now,
+We offer affordable rates on car rentals.</p>
+            </div>
+            <hr>
+
+        </div>
+    </section>

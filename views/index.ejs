@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-
-<head>
+    
+    <head>
     <title>travelbooking.services</title>
     <meta charset="utf-8">
-
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -17,79 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/jquery.min.js"></script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16751523481"></script>
-    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-16751523481'); </script>
-
-    <!-- Event snippet for Purchase conversion page -->
-    <script> gtag('event', 'conversion', { 'send_to': 'AW-16751523481/YUOBCJPU5uAZEJnt37M-', 'value': 1.0, 'currency': 'INR', 'transaction_id': '' }); </script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16751523481"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'AW-16751523481');
-    </script>
-
-
-    <!-- Event snippet for mobile conversion conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script> function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof (url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-16751523481/_fsQCOK18uAZEJnt37M-',
-                'value': 1.0,
-                'currency': 'INR',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16657952456"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'AW-16657952456');
-    </script>
-
-    <script>
-        gtag('config', 'AW-16657952456/BJFiCPegsJoaEMjdkIc-', {
-            'phone_conversion_number': '888-928-1369'
-        });
-    </script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16751523481"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'AW-16751523481');
-    </script>
-
-
-    <script>
-        gtag('config', 'AW-16751523481/xw6MCIDC8eAZEJnt37M-', {
-            'phone_conversion_number': '(888) 928-1369'
-        });
-    </script>
-
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-40R7XVTMVS"></script>
-    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-40R7XVTMVS'); </script>
-
+   
 
 
 </head>
@@ -128,7 +56,7 @@
             border-radius: 50%;
             height: 60px;
             width: 60px;
-            background: url(../cm-reservation/images/phoneRotate.png) center center no-repeat;
+            background: url(images/cal2.gif) center center no-repeat;
             text-align: center;
             display: inline-block;
             background-size: 28px;
@@ -227,12 +155,25 @@
             color: #191e3b;
             font-size: 27px;
             font-weight: 600;
-            padding: 0 5px 0 5px;
+            padding: 8px 4px;
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 10px;
             font-family: 'Fira Sans', sans-serif;
         }
+
+        .numbers{
+    width:90%;
+    margin-inline:auto;
+   margin-block: 1rem;
+}
+
+.mobile-text{
+
+    padding-inline:10px;
+}
+
 
         span.nbrs {
             text-align: left;
@@ -425,46 +366,10 @@
 
 
 
+<%- include('components/nav') %>
 
 
-
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="https://www.travelbooking.services"><img src="images/logo.png"
-                        class="logo"></a>
-            </div>
-
-            <!-- <div class="callnow_mm">
-                <a href="tel: (844) 915-7447">
-                    <div class="hdrtxt"><i class="fa fa-headphones "></i> Call </div>
-                </a>
-            </div> -->
-
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar_st">
-                    <li class="active"><a href="https://www.travelbooking.services"><strong>Home</strong></a></li>
-                    <li><a href="/about"><strong>About Us</strong></a></li>
-                    <li><a href="/us-flights"><Strong>Travel</Strong></a></li>
-                    <li><a href="/contact"><Strong>Contact Us</Strong></a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <div class="tollfree" style="margin-left: 1.5rem;" >
-                        <a href="tel: (844) 915-7447"><p style=" font-size: 16px; " > Call 24/7 for our best deals</p><img
-                                src="images/phone01.png"> (844) 915-7447 </a>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-
+   
 
     
 
@@ -473,7 +378,7 @@
             <div class="clickFull">
                 <a href="tel:(844) 915-7447" class="ddka"></a>
                 <div class="airLineimg">
-                    <h1 class="blink1">Expedia Reservations Desk</h1>
+                     <h1 class="blink1">Travel-Reservation Desk</h1>
                     <img src="images/Generic-Banner1.png">
                 </div>
                 <!--<a href="tel:(844) 915-7447">
@@ -513,7 +418,7 @@
                     </a>
 
                 </div>
-                <p class="mt-3 tt_btm">Call Our Airline Booking Experts and Save Up to 60% on Domestic and Up to 50% on
+                <p class="mt-3 tt_btm mobile-text">Call Our Airline Booking Experts and Save Up to 60% on Domestic and Up to 50% on
                     International Flight Booking</p>
             </div>
             <hr>
@@ -749,20 +654,7 @@
                                         <button type="sumit" name="submitForm"> <i class="fa fa-search"></i> </button>
                                     </div>
                                 </div>
-                                <!--<div class="row_types">
-            <div class="flight_type_tgfsr">
-            
-            		  <div class="form-group form-check">
-            			<input type="checkbox" class="form-check-input" id="exampleCheck1">
-            			<label class="form-check-label" for="exampleCheck1"> Add nearby airports </label>
-            		  </div>
-            
-            		<div class="form-group form-check">
-            			<input type="checkbox" class="form-check-input" id="exampleCheck2">
-            			<label class="form-check-label" for="exampleCheck2"> Direct flights only </label>
-            		  </div>
-            </div>
-            </div> -->
+                             
                             </form>
                         </div>
                     </div>
@@ -770,7 +662,6 @@
                     <link rel="stylesheet" href="Searchform/css/jquery-ui.css">
                     <script src="../code.jquery.com/jquery-1.12.4.js"></script>
                     <script src="Searchform/js/jquery-ui.js"></script>
-                    <!--<script src="js/airports.js"></script>-->
                     <script>
                         function addDays(date, days) {
                             var result = new Date(date);
@@ -987,7 +878,6 @@
                                     }
                                 })
                             });
-                            //console.log(arr);
                             $("#location").autocomplete({
                                 source: function (request, response) {
                                     var stringLength = $.ui.autocomplete.escapeRegex(request.term).length;
@@ -995,12 +885,11 @@
                                     var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(request.term), "i");
                                     var matcher2 = new RegExp($.ui.autocomplete.escapeRegex(request.term) + "+", "i");
 
-                                    //alert(matcher);
+                                   
                                     var isData = 1;
                                     response($.grep(arr, function (item) {
 
-                                        //alert(item);
-                                        //alert(matcher.test( item ));
+                                       
 
                                         if (stringLength <= 3) {
                                             if (matcher.test(item)) {
@@ -1222,75 +1111,6 @@
     </div>
 
 
-    <!-- <section class="destinations-carousel">
-        <h2>Explore vacation packages to popular destinations</h2>
-        <div class="carousel-wrapper">
-            <button class="carousel-btn left" onclick="slideLeft()">
-                <span class="arrow">&#10094;</span>
-            </button>
-
-            <div class="carousel-track" id="carouselTrack">
-                <div class="dest-card">
-                    <img src="/images/capetown.jpg" alt="Cape Town">
-                    <div class="dest-info">
-                        <div class="dest-city">Cape Town</div>
-                        <div class="dest-region">South Africa</div>
-                        <div class="dest-price">Avg. nightly price: $210</div>
-                    </div>
-                </div>
-
-                <div class="dest-card">
-                    <img src="/images/queenstown.jpg" alt="Queenstown">
-                    <div class="dest-info">
-                        <div class="dest-city">Queenstown</div>
-                        <div class="dest-region">New Zealand</div>
-                        <div class="dest-price">Avg. nightly price: $240</div>
-                    </div>
-                </div>
-
-                <div class="dest-card">
-                    <img src="/images/marrkech.jpg" alt="Marrakech">
-                    <div class="dest-info">
-                        <div class="dest-city">Marrakech</div>
-                        <div class="dest-region">Morocco</div>
-                        <div class="dest-price">Avg. nightly price: $160</div>
-                    </div>
-                </div>
-
-                <div class="dest-card">
-                    <img src="/images/reykjavik.jpg" alt="Reykjavik">
-                    <div class="dest-info">
-                        <div class="dest-city">Reykjavik</div>
-                        <div class="dest-region">Iceland</div>
-                        <div class="dest-price">Avg. nightly price: $290</div>
-                    </div>
-                </div>
-
-                <div class="dest-card">
-                    <img src="/images/phuket.jpg" alt="Phuket">
-                    <div class="dest-info">
-                        <div class="dest-city">Phuket</div>
-                        <div class="dest-region">Thailand</div>
-                        <div class="dest-price">Avg. nightly price: $150</div>
-                    </div>
-                </div>
-
-                <div class="dest-card">
-                    <img src="/images/vancouver.jpg" alt="Vancouver">
-                    <div class="dest-info">
-                        <div class="dest-city">Vancouver</div>
-                        <div class="dest-region">British Columbia, Canada</div>
-                        <div class="dest-price">Avg. nightly price: $260</div>
-                    </div>
-                </div>
-            </div>
-
-            <button class="carousel-btn right" onclick="slideRight()">
-                <span class="arrow">&#10095;</span>
-            </button>
-        </div>
-    </section> -->
-
 
 
    <section class="sec_why">
@@ -1337,11 +1157,7 @@
     <section style="position: relative; width: 100%; height: 60vh; overflow: hidden; 
   border-radius: 0 2rem 2rem 0; margin: auto; max-width: 100%;">
 
-        <!-- Background Image
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Traveler on beach at sunset"
-            style="width: 100%; height: 100%; object-fit: cover; border-radius: 0 2rem 2rem 0;"> -->
-
-               <!-- Background Image -->
+      
         <img src="/images/mid1.jpg" alt="Traveler on beach at sunset"
             style="width: 100%; height: 100%; object-fit: cover; border-radius: 0 2rem 2rem 0;">
 
@@ -1362,26 +1178,6 @@ background-color: #0071c2; color: white; text-decoration: none; border-radius: 6
 
 
 
-
-    <!-- <div class="footer_top">
-   <div class="container">
-      <div class="row hdgfrt_gh">
-         <div class="col-md-6 lsers_mde" style="background:url(images/banner3.jpg) left top no-repeat; height: 160px;
-            background-size: cover; background-position: center;">
-         </div>
-         <div class="col-md-6">
-            <div class="news_ltr">
-               <h4> Get special offers, and more from Traveler </h4>
-               <p> Subscribe to see secret deals prices drop the moment you sign up! </p>
-               <form>
-                  <input type="email" placeholder="Enter Your Email..." name="" required="">
-                  <button type="submit">Submit</button>
-               </form>
-            </div>
-         </div>
-      </div>
-   </div>
-</div> -->
 
     <section class="destinations-carousel">
         <h2>Explore vacation packages to popular destinations</h2>
@@ -1476,320 +1272,11 @@ background-color: #0071c2; color: white; text-decoration: none; border-radius: 6
     </section>
 
 
-
-    <!-- <section class="dest_bx pd50">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-12">
-            <div class="hding_tt22">
-               <h3> Explore Our <span>Popular Destination</span> </h3>
-               <p> Explore your dream domestic and international destinations at the lowest airfare today. </p>
-            </div>
-         </div>
-      </div>
-      <div class="row">
-         <div class="package_con">
-            <div class="item_dest">
-               <a href="#">
-                  <img src="images/dubai2.jpg" class="img-fluid">
-                  <div class="hot_deal">
-                     <strong>Fare starting From</strong>
-                     <p> Dubai <span>$1,637</span></p>
-                  </div>
-               </a>
-            </div>
-         </div>
-         <div class="package_con">
-            <div class="item_dest">
-               <a href="#">
-                  <img src="images/europe.jpg" class="img-fluid">
-                  <div class="hot_deal">
-                     <strong>Fare starting From</strong>
-                     <p> Europe <span>$1,198</span></p>
-                  </div>
-               </a>
-            </div>
-         </div>
-         <div class="package_con">
-            <div class="item_dest">
-               <a href="#">
-                  <img src="images/Canada.jpg" class="img-fluid">
-                  <div class="hot_deal">
-                     <strong>Fare starting From</strong>
-                     <p> Canada <span>$682</span></p>
-                  </div>
-               </a>
-            </div>
-         </div>
-         <div class="package_con">
-            <div class="item_dest">
-               <a href="#">
-                  <img src="images/uk.jpg" class="img-fluid">
-                  <div class="hot_deal">
-                     <strong>Fare starting From</strong>
-                     <p> London <span>$170</span></p>
-                  </div>
-               </a>
-            </div>
-         </div>
-         <div class="package_con">
-            <div class="item_dest">
-               <a href="#">
-                  <img src="images/lasvegas0.jpg" class="img-fluid">
-                  <div class="hot_deal">
-                     <strong>Fare starting From</strong>
-                     <p> Las vegas <span>$148</span></p>
-                  </div>
-               </a>
-            </div>
-         </div>
-      </div>
-   </div>
-</section> -->
-<!-- 
-
-
-
-
-
-    <section class="dest_sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="hding_tt"><span>Domestic & International</span> Routes</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="base">
-                        <div class="col-md-2">
-                            <div class="entered_lazyloaded">
-                                <img src="images/NK.gif" alt="delta" />
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-xs-8">
-                            <h6 class="sfont_dates"> 27 Oct 2024 - 04 Nov 2024 </h6>
-                            <div class="sfont_wr">
-                                <h4> RDU </h4>
-                                <p>Raleigh Durham</p>
-                            </div>
-                            <div class="loaded_mt_2">
-                                <img src="images/planeicon.jpg" alt="#" />
-                            </div>
-                            <div class="sfont_wr last_end">
-                                <h4> ORD </h4>
-                                <p> Orlando </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-4">
-                            <div class="ovr_price">
-                                <h4 class="price">$274.00</h4>
-                                <a href="#"><i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="base">
-                        <div class="col-md-2">
-                            <div class="entered_lazyloaded">
-                                <img src="images/NK.gif" alt="delta" />
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-xs-8">
-                            <h6 class="sfont_dates"> 27 Nov 2024 - 05 Dec 2024 </h6>
-                            <div class="sfont_wr">
-                                <h4> NYC </h4>
-                                <p> New York </p>
-                            </div>
-                            <div class="loaded_mt_2">
-                                <img src="images/planeicon.jpg" alt="#" />
-                            </div>
-                            <div class="sfont_wr last_end">
-                                <h4> SLC </h4>
-                                <p> Salt Lake City </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-4">
-                            <div class="ovr_price">
-                                <h4 class="price">$305.00</h4>
-                                <a href="#"><i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="base">
-                        <div class="col-md-2">
-                            <div class="entered_lazyloaded">
-                                <img src="images/al_logo_UA.png" alt="united" />
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-xs-8">
-                            <h6 class="sfont_dates"> 22 Nov 2024 - 01 Dec 2024 </h6>
-                            <div class="sfont_wr">
-                                <h4> ORL </h4>
-                                <p> Orlando </p>
-                            </div>
-                            <div class="loaded_mt_2">
-                                <img src="images/planeicon.jpg" alt="#" />
-                            </div>
-                            <div class="sfont_wr last_end">
-                                <h4> NYC </h4>
-                                <p> New York </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-4">
-                            <div class="ovr_price">
-                                <h4 class="price">$271.22</h4>
-                                <a href="#"><i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="base">
-                        <div class="col-md-2">
-                            <div class="entered_lazyloaded">
-                                <img src="images/NK.gif" alt="delta" />
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-xs-8">
-                            <h6 class="sfont_dates"> 01 Dec 2024 - 10 Dec 2024 </h6>
-                            <div class="sfont_wr">
-                                <h4> DFW </h4>
-                                <p> Dallas </p>
-                            </div>
-                            <div class="loaded_mt_2">
-                                <img src="images/planeicon.jpg" alt="#" />
-                            </div>
-                            <div class="sfont_wr last_end">
-                                <h4> ORD </h4>
-                                <p> Orlando </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-4">
-                            <div class="ovr_price">
-                                <h4 class="price"> $711.33 </h4>
-                                <a href="#"><i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="base">
-                        <div class="col-md-2">
-                            <div class="entered_lazyloaded">
-                                <img src="images/al_logo_LA.png" alt="delta" />
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-xs-8">
-                            <h6 class="sfont_dates">27 Oct 2024 - 04 Nov 2024 </h6>
-                            <div class="sfont_wr">
-                                <h4> SCL </h4>
-                                <p> Santiago </p>
-                            </div>
-                            <div class="loaded_mt_2">
-                                <img src="images/planeicon.jpg" alt="#" />
-                            </div>
-                            <div class="sfont_wr last_end">
-                                <h4> PUQ </h4>
-                                <p> Punta Arenas </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-4">
-                            <div class="ovr_price">
-                                <h4 class="price">$608.00</h4>
-                                <a href="#"><i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="base">
-                        <div class="col-md-2">
-                            <div class="entered_lazyloaded">
-                                <img src="images/NK.gif" alt="delta" />
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-xs-8">
-                            <h6 class="sfont_dates"> 20 Nov 2024 - 30 Nov 2024 </h6>
-                            <div class="sfont_wr">
-                                <h4> MEM </h4>
-                                <p> Memphis </p>
-                            </div>
-                            <div class="loaded_mt_2">
-                                <img src="images/planeicon.jpg" alt="#" />
-                            </div>
-                            <div class="sfont_wr last_end">
-                                <h4> LAS </h4>
-                                <p> Las Vegas </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-4">
-                            <div class="ovr_price">
-                                <h4 class="price">$707.00</h4>
-                                <a href="#"><i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="base">
-                        <div class="col-md-2">
-                            <div class="entered_lazyloaded">
-                                <img src="images/al_logo_UA.png" alt="united" />
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-xs-8">
-                            <h6 class="sfont_dates"> 02 Dec 2024 - 08 Dec 2024 </h6>
-                            <div class="sfont_wr">
-                                <h4> ACY </h4>
-                                <p> Atlantic Cty </p>
-                            </div>
-                            <div class="loaded_mt_2">
-                                <img src="images/planeicon.jpg" alt="#" />
-                            </div>
-                            <div class="sfont_wr last_end">
-                                <h4> ORL </h4>
-                                <p> Orlando </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-4">
-                            <div class="ovr_price">
-                                <h4 class="price">$638.00</h4>
-                                <a href="#"><i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="base">
-                        <div class="col-md-2">
-                            <div class="entered_lazyloaded">
-                                <img src="images/NK.gif" alt="delta" />
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-xs-8">
-                            <h6 class="sfont_dates">27 Oct 2024 - 04 Nov 2024 </h6>
-                            <div class="sfont_wr">
-                                <h4> RIC </h4>
-                                <p> Richmond </p>
-                            </div>
-                            <div class="loaded_mt_2">
-                                <img src="images/planeicon.jpg" alt="#" />
-                            </div>
-                            <div class="sfont_wr last_end">
-                                <h4> STT </h4>
-                                <p> Saint Thomas </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-4">
-                            <div class="ovr_price">
-                                <h4 class="price">$669.00</h4>
-                                <a href="#"><i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
 <%- include('card') %>
 
 
 <section class="abt_home" style="padding: 20px; background-color: #f9f9f9;">
-  <h1 style="text-align: center;">TravelBookingServices flights with Expert</h1>
+  <h1 style="text-align: center;">TravelBooking Services flights with Expert</h1>
 
   <div class="container" style="max-width: 900px; margin: 0 auto;">
     <div class="row">
@@ -1906,59 +1393,6 @@ background-color: #0071c2; color: white; text-decoration: none; border-radius: 6
 
     
  
-
-
-    <!-- <section class="abt_home">
-        <div class="container">
-            <div class="row"  style="display:flex;" >
-                <div class="col-md-7">
-                    <div class="row">
-                        <div class="about_sec">
-                            <h4>TravelBookingServices Flight Tickets with <strong>travelbooking.services</strong></h4>
-
-                            <p>Looking to save big on your next trip? <strong>travelbooking.services</strong> makes it easier
-                                than ever to TravelBookingServices flight tickets while getting the best value for your money.
-                                Whether you're flying for business or planning a vacation, we’re here to help you
-                                stretch your travel budget further. Our team has access to exclusive, unpublished fares
-                                not available online — only through our expert travel agents. By partnering with 475+
-                                low-cost and major airlines, we help our customers save up to 40% on domestic and
-                                international flights.</p>
-
-                            <p>Our process is fast, transparent, and reliable. We recommend calling us to book your
-                                flight directly, so our agents can apply special discounts and fare hacks that may not
-                                be available through self-service tools. Plus, we’ll help you choose the best timing,
-                                routes, and deals tailored to your travel preferences.</p>
-
-                            <p><strong>Why TravelBookingServices Flights with <strong>travelbooking.services</strong>?</strong></p>
-                            <ul>
-                                <li>Expert agents use proven booking techniques and fare-finding hacks to help you save
-                                    more.</li>
-                                <li>Partnerships with over 475+ airlines — including budget carriers — for maximum
-                                    savings and flexibility.</li>
-                                <li>Price match guarantee on all cheap flight bookings to ensure the best possible
-                                    value.</li>
-                                <li>Personalized service to help you find the ideal flight based on your timing, budget,
-                                    and airline preference.</li>
-                                <li>24/7 support for booking, changes, cancellations, or last-minute travel needs.</li>
-                            </ul>
-
-                            <p>At <strong>travelbooking.services</strong>, our goal is to make travel affordable and stress-free
-                                for everyone. Whether you're booking in advance or looking for a last-minute deal, we're
-                                here to make sure you get the lowest fare available without compromising on service.
-                                Call us now and let our travel experts find the perfect flight for you!</p>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="about_picture">
-                        <img src="images/01one.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
@@ -2090,7 +1524,7 @@ background-color: #0071c2; color: white; text-decoration: none; border-radius: 6
         .wifi-symbol .fourth {
             width: 30px;
             height: 36px;
-            background: url(/images/animatePhoneWhite.png) left center no-repeat;
+             background: url(images/cal2.gif) center center no-repeat;
             background-size: 20px;
             display: inline-block;
         }
@@ -2122,14 +1556,7 @@ background-color: #0071c2; color: white; text-decoration: none; border-radius: 6
             padding-left: 11px;
         }
 
-        /*.callStringNew a span {
-            font-size: 25px;
-            display: block;
-            padding-top: 0;
-            letter-spacing: 2px;
-            font-weight: bold;
-            font-family: 'Montserrat';
-        }*/
+       
 
         .callStringNew a span._speak {
             font-size: 14px;
@@ -4503,11 +3930,7 @@ background-color: #0071c2; color: white; text-decoration: none; border-radius: 6
                             </li>
                             <li class="dsnp-ex"><a href="/cancellation-refund"><i class="fa fa-angle-right"></i>
                                     Cancellation & Refund Policy</a></li>
-                            <!-- <li><a href="about.php"><i class="fa fa-angle-right"></i> About Us</a></li>
-            <li><a href="disclaimer.php"><i class="fa fa-angle-right"></i> Disclaimer</a></li>
-            <li><a href="privacy-policy.php"><i class="fa fa-angle-right"></i> Privacy Policy</a></li>
-            <li><a href="terms-conditions.php"><i class="fa fa-angle-right"></i> Terms & Conditions</a></li> -->
-                            <!-- <li class="dsnp-ex"><a href="cancellation-refund.php"><i class="fa fa-angle-right"></i> Cancellation & Refund Policy</a></li> -->
+                            
                             <li><a href="sitemap.xml"><i class="fa fa-angle-right"></i> Site Map</a></li>
                         </ul>
                     </div>
@@ -4523,23 +3946,26 @@ APT#14210
 PALM DESERT, CA 92211
                                 </a></li>
                             <li><a href="tel: (844) 915-7447"><i class="fa fa-phone"></i> (844) 915-7447 </a></li>
-                            <!-- <li><a href="https://airlinesfarefinder.com/"><i class=" fa fa-desktop"></i> Expeideatravelcom</a></li> -->
-                            <p>
+                          
+                            <li>
+                                <p>
                                 <a href="mailto:sales@travelbooking.services" style="display: flex; align-items: center; color:#ffffff">
                                     <i class="fa fa-envelope" style="margin-right: 8px;"></i>
                                     sales@travelbooking.services
                                 </a>
                             </p>
+                            </li>
 
-                             <p>
+                            <li>
+                                <p>
                                 <a href="mailto:info@travelbooking.services" style="display: flex; align-items: center;  color:#ffffff">
                                     <i class="fa fa-envelope" style="margin-right: 8px;"></i>
                                     info@travelbooking.services
                                 </a>
                             </p>
+                            </li>
                         </ul>
-                        <!--<img src="images/iata.png" alt="iata">
-          <img src="images/logo-arc.png" alt="iata"> -->
+                       
                     </div>
                 </div>
 
@@ -4561,10 +3987,7 @@ PALM DESERT, CA 92211
             <div class="row">
                 <div class="col-md-12">
                     <ul>
-                        <!--<li><img src="icon/01.png"></li>
-          <li><img src="icon/02.png"></li>
-          <li><img src="icon/03.png"></li>
-          <li><img src="icon/04.png"></li> -->
+                       
                         <li><img src="icon/05.png"></li>
                         <li><img src="icon/06.png"></li>
                         <li><img src="icon/07.png"></li>
@@ -4579,431 +4002,5 @@ PALM DESERT, CA 92211
     </div>
 
 
-    <div id="boxes" class="col-sm-6 col-sm-offset-3">
-        <a href="tel:(844) 915-7447">
-            <div class="d-block d-md-block d-lg-none">
-                <div class="modal fade show custompopup" style="display: block;">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content pt-0">
-                            <div class="modal-footer border-0">
-                                <p onclick="myFunction1()" class="btn-secondary">
-                                    <i class="fa fa-close " aria-hidden="true"></i>
-                                </p>
-
-                            </div>
-                            <div class="popup-content">
-                                <img alt="Logo" class="header-logo" loading="lazy" width="120" height="40"
-                                    decoding="async" data-nimg="1" style="color:transparent" src="images/expedia.png">
-                                <p>Talk to a travel expert and Save 25%</p>
-                                <h2 class="support-no">
-                                    <i class="fas fa-headset"></i> <!-- -->(844) 915-7447<!-- -->
-                                </h2>
-                                <hr>
-                                <h5>24/7 Reservation Support</h5>
-                                <div class="row justify-content-center">
-                                    <div class="col-6 align-self-center"><img alt="Logo" class="" loading="lazy"
-                                            width="50" height="50" decoding="async" data-nimg="1"
-                                            style="color:transparent;width:100%;height:auto" sizes="100vw"
-                                            src="images/left-man.jpg"></div>
-                                    <div class="col-6">
-                                        <ul class="arrow-list">
-                                            <li>Tickets Booking</li>
-                                            <li>Manage Booking</li>
-                                            <li>Customer Service</li>
-                                            <li>Cancellation</li>
-                                        </ul>
-                                    </div>
-                                    <div class="mt-3 call-offers">
-                                        <img src="images/cal2.gif" style="width:50px; height:50px">
-                                        <div>
-                                            <p class="mb-0">Call Us &amp; get Upto <small>40%OFF</small> on Flights</p>
-                                            <h4 class="mb-0">(844) 915-7447</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </div>
-
-
 
 </html>
-<style>
-    .d-lg-none {
-        display: none !important;
-    }
-
-    #boxes {
-        display: none;
-    }
-
-    .modal.fade.show {
-        opacity: 1;
-        padding: 0 !important;
-        overflow: unset;
-        background: rgba(0, 0, 0, .85);
-        text-align: center;
-        z-index: 9999999999;
-    }
-
-    .popup-content {
-        background-color: #fff;
-        margin: 6% auto;
-        padding: 8px;
-        border: 1px solid #00185e;
-        width: 96%;
-        max-width: 375px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
-        border-radius: 8px;
-        text-align: center;
-    }
-
-    .custompopup .modal-footer.border-0 {
-        margin-top: 0px;
-    }
-
-    .border-0 {
-        border: 0 !important;
-    }
-
-    .modal-footer {
-        display: flex;
-        flex-shrink: 0;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-end;
-        padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap)* .5);
-        background-color: var(--bs-modal-footer-bg);
-        border-top: var(--bs-modal-footer-border-width) solid var(--bs-modal-footer-border-color);
-        border-bottom-right-radius: var(--bs-modal-inner-border-radius);
-        border-bottom-left-radius: var(--bs-modal-inner-border-radius);
-    }
-
-    .pt-0 {
-        padding-top: 0 !important;
-    }
-
-    .modal-content {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        color: var(--bs-modal-color);
-        pointer-events: auto;
-        background-color: var(--bs-modal-bg);
-        background-clip: padding-box;
-        border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
-        border-radius: var(--bs-modal-border-radius);
-        outline: 0;
-    }
-
-    .modal-content {
-        background: hsla(0, 0%, 100%, 0) !important;
-    }
-
-    .modal.show .modal-dialog {
-        transform: none;
-    }
-
-    .modal.fade .modal-dialog {
-        transition: transform .3s ease-out;
-        transform: translateY(-50px);
-    }
-
-    @media (max-width: 767px) {
-        .modal.show .modal-dialog {
-            margin: 0;
-        }
-    }
-
-    .modal-dialog-centered {
-        display: flex;
-        align-items: center;
-        min-height: calc(100% - var(--bs-modal-margin)* 2);
-    }
-
-    .modal-dialog {
-        position: relative;
-        width: auto;
-        margin: var(--bs-modal-margin);
-        pointer-events: none;
-    }
-
-    .header-logo {
-        width: auto;
-        margin-bottom: 20px;
-        margin-left: 40px;
-        margin-top: 10px;
-    }
-
-    .support-no {
-        font-size: 32px;
-        font-weight: 700;
-        color: #ff5722;
-    }
-
-    hr {
-        width: 100%;
-        height: 3px !important;
-        color: #da552f !important;
-
-        margin-top: 0 !important;
-        margin: 1rem 0;
-
-        border: 0;
-        border-top: var(--bs-border-width) solid;
-        opacity: .25;
-    }
-
-    .justify-content-center {
-        justify-content: center !important;
-    }
-
-    .row {
-        --bs-gutter-x: 1.5rem;
-        --bs-gutter-y: 0;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: calc(-1* var(--bs-gutter-y));
-        margin-right: calc(-.5* var(--bs-gutter-x));
-        margin-left: calc(-.5* var(--bs-gutter-x));
-    }
-
-    .align-self-center {
-        align-self: center !important;
-    }
-
-    .arrow-list {
-        list-style-type: none;
-        padding: 0;
-        text-align: left;
-        font-weight: 500;
-    }
-
-    .arrow-list li,
-    .arrow-list li:hover {
-        background: linear-gradient(90deg, #4d8cff, #fff);
-    }
-
-    .arrow-list li {
-        position: relative;
-        color: #00185e;
-        padding: 1px 0 0 7px !important;
-        margin: 12px 0 !important;
-        cursor: pointer;
-        transition: background .3s;
-        border-radius: 12px 0;
-
-        font-size: 16px;
-        line-height: 1.9;
-        font-weight: 400;
-    }
-
-    .call-offers {
-        width: 92%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background: #00308D;
-        padding: 10px 15px;
-        border-radius: 5px;
-        color: #fff;
-        text-align: left;
-        margin-top: 12px;
-    }
-
-    .call-offers h4 {
-        font-size: 24px;
-    }
-
-    p.mb-0 {
-        font-size: 13px;
-    }
-
-    p.mb-0 small {
-        color: #fff;
-        background-color: #0f4ab5;
-        border-radius: 5px;
-        padding: 3px;
-        font-weight: 400;
-        letter-spacing: 1px;
-    }
-
-    .custompopup h4 {
-        margin-top: 10px;
-        color: #fff;
-        font-size: 25px;
-        line-height: 30px;
-        font-weight: 700;
-    }
-
-    @media (min-width:320px) and (max-width:767px) {
-        .d-block {
-            display: block !important;
-        }
-
-        .btn-secondary {
-            font-size: 14px;
-            font-weight: 600;
-            border-radius: 20px;
-            background: rgba(0, 74, 173, 0) !important;
-            color: #ed942d !important;
-            border: 0;
-            padding: 10px 30px !important;
-            right: -3px !important;
-            position: relative !important;
-            top: 79px !important;
-            border: none !important;
-        }
-
-        #boxes {
-            display: block;
-        }
-
-    }
-</style>
-
-<script>
-    //IIFE
-    (function () {
-        "use strict";
-
-        var canvas, ctx;
-        var points = [];
-        var maxDist = 100;
-
-        function init() {
-            //Add on load scripts
-            canvas = document.getElementById("canvas");
-            ctx = canvas.getContext("2d");
-            resizeCanvas();
-            generatePoints(700);
-            pointFun();
-            setInterval(pointFun, 25);
-            window.addEventListener("resize", resizeCanvas, false);
-        }
-        //Particle constructor
-        function point() {
-            this.x = Math.random() * (canvas.width + maxDist) - maxDist / 2;
-            this.y = Math.random() * (canvas.height + maxDist) - maxDist / 2;
-            this.z = Math.random() * 0.5 + 0.5;
-            this.vx = (Math.random() * 2 - 0.5) * this.z;
-            this.vy = (Math.random() * 1.5 + 1.5) * this.z;
-            this.fill = "rgba(255,255,255," + (0.5 * Math.random() + 0.5) + ")";
-            this.dia = (Math.random() * 2.5 + 1.5) * this.z;
-            points.push(this);
-        }
-        //Point generator
-        function generatePoints(amount) {
-            var temp;
-            for (var i = 0; i < amount; i++) {
-                temp = new point();
-            }
-            console.log(points);
-        }
-        //Point drawer
-        function draw(obj) {
-            ctx.beginPath();
-            ctx.strokeStyle = "transparent";
-            ctx.fillStyle = obj.fill;
-            ctx.arc(obj.x, obj.y, obj.dia, 0, 2 * Math.PI);
-            ctx.closePath();
-            ctx.stroke();
-            ctx.fill();
-        }
-        //Updates point position values
-        function update(obj) {
-            obj.x += obj.vx;
-            obj.y += obj.vy;
-            if (obj.x > canvas.width + maxDist / 2) {
-                obj.x = -(maxDist / 2);
-            } else if (obj.xpos < -(maxDist / 2)) {
-                obj.x = canvas.width + maxDist / 2;
-            }
-            if (obj.y > canvas.height + maxDist / 2) {
-                obj.y = -(maxDist / 2);
-            } else if (obj.y < -(maxDist / 2)) {
-                obj.y = canvas.height + maxDist / 2;
-            }
-        }
-        //
-        function pointFun() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            for (var i = 0; i < points.length; i++) {
-                draw(points[i]);
-                update(points[i]);
-            }
-        }
-
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            pointFun();
-        }
-
-        //Execute when DOM has loaded
-        document.addEventListener("DOMContentLoaded", init, false);
-    })();
-
-
-
-</script>
-<script>
-    function closePopup() {
-        var popup = document.getElementById("boxes");
-        popup.style.display = "none";
-    }
-</script>
-
-<script>
-    function slideLeft() {
-        document.getElementById('carouselTrack').scrollBy({
-            left: -300,
-            behavior: 'smooth'
-        });
-    }
-
-    function slideRight() {
-        document.getElementById('carouselTrack').scrollBy({
-            left: 300,
-            behavior: 'smooth'
-        });
-    }
-</script>
-
-
-<script>
-    // Function to check if the user is on a mobile device
-    function isMobileDevice() {
-        return window.innerWidth <= 767; // Adjust breakpoint as needed
-    }
-
-
-    //  Function to show the popup after 15 seconds on mobile devices
-    function showPopupAfterDelay() {
-        if (isMobileDevice()) {
-            setTimeout(function () {
-                var popup = document.getElementById("boxes");
-                if (popup) {
-                    popup.style.display = "block";
-                }
-            }, 10000); // 15 seconds delay
-        }
-    }
-
-
-
-    // Call the function on page load
-    document.addEventListener("DOMContentLoaded", showPopupAfterDelay);
-</script>
-
-<style>
-    #boxes {
-        display: none;
-        /* Initially hide the popup */
-    }
-</style>
