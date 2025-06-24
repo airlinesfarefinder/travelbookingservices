@@ -61,9 +61,6 @@ app.get('/sitemap.xml', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'sitemap.xml'));
 });
 
-app.get('/mexico-flights', (req, res) => {
-  res.render('mexicoflight', { title: 'Mexico Flights' });
-});
 
 
 
